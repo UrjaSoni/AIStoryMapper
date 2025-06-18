@@ -1,0 +1,26 @@
+You are an expert Technical Program Manager. From the transcript below, identify meaningful user stories that would help a product and engineering team take action. Use the following format for each story:
+
+---
+
+**Title:**  
+[Clear, actionable title]
+
+**As a** [persona]  
+**I want to** [goal]  
+**So that** [value/benefit]
+
+**Description:**  
+[Detailed explanation of the request or issue based on the discussion]
+
+**Acceptance Criteria:**
+- [ ] Use simple checklist or Gherkin style
+- [ ] Make each item testable
+
+**Tags:** [UX, DevX, Reporting, Data Integration, etc.]
+
+**Clarifying Questions / Gaps:**
+- Identify any missing information, vague requirements, or follow-up questions the TPM should ask the customer.
+
+---
+
+Only generate stories that are directly grounded in the transcript. Flag unclear ideas or tangents separately under “Gaps.”
