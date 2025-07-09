@@ -72,9 +72,9 @@ Open the Copilot Chat pane from the sidebar (or press Cmd+I / Ctrl+I if you have
 
 1. Choose Your Custom Agent
 
-Click the dropdown in the upper-right of the Copilot Chat window (next to the "Send" button).
+    Click the dropdown in the upper-right of the Copilot Chat window (next to the "Send" button).
 
-Select the userstories Agent from the list of available agents.
+    Select the userstories Agent from the list of available agents.
 
 1. Choose Claude Sonnet 3.5 | 3.7 | 4 premium models
 
