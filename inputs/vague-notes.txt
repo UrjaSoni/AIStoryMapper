@@ -1,0 +1,53 @@
+- bug: autosave doesn’t trigger if no keyboard activity – noticed during usability test w/ Lauren
+- "I clicked publish, nothing happened. Waited 10s" — user in trial account (limited tier?)
+- Need: autosave every X seconds? (configurable?) → story?
+- File structure gets messy when >10 drafts. Should auto-collapse?
+
+- 👇 Whiteboard sketch captured:
+  Feature gating matrix:
+  ┌────────────┬────────────┬────────────┐
+  │ Feature    │ Plan: Free │ Plan: Pro  │
+  ├────────────┼────────────┼────────────┤
+  │ Comments   │     ❌     │     ✅     │
+  │ Export PDF │     ❌     │     ✅     │
+  │ Audit log  │     ❌     │     ✅     │
+  └────────────┴────────────┴────────────┘
+
+- Need to refactor permission service → too many conditionals (line 123+, `accessControl.js`)
+- Spike: evaluate new feature flag tools → LaunchDarkly vs Statsig? Performance, ease of use.
+
+- "Users don't understand what 'Sync Source' means" → rename? Add tooltip?
+
+- 🧠 New user journey feedback (from Grace):
+    - "Too many steps before I can actually try anything."
+    - Possible fix: pre-fill sandbox environment with sample data
+    - 🟢 Could be fast win → maybe a story?
+
+- Cmd+K palette: confirmed we want this. Add shortcuts for:
+    - Go to Project
+    - Toggle Dark Mode
+    - Open Last File
+  ✅ All supported in frontend router
+
+- ✅ Clear ask from CS team:
+    > “Need ability to bulk reassign tasks to another user — huge pain right now”
+    - Currently one at a time via modal
+    - Add checkbox + bulk action menu
+    - Should appear in `TaskList.vue`
+
+- ✍️ “Revisions view” draft idea — something like Google Docs version history?
+    - What’s stored per version? Full snapshot or diff?
+    - Need research (Spike)
+
+- Someone asked “what happens if a user deletes a project while another team member is editing?” — sounds like a race condition
+
+- bug? Safari 14 - file uploads just hang (no error shown) → backend or client?
+
+- Confusion around login state — SSO token expiry causes “random” logout
+    - Sentry issue `#401-expired-refresh`
+    - Maybe just needs better UX fallback?
+
+- Idea: highlight stale branches in Git integration tab (gray out after 30d no commits?) → low-hanging fruit?
+
+- TODO: Check if we're duplicating telemetry pings on Settings save
+- “Document upload” should support drag & drop → seems like it's only via button now

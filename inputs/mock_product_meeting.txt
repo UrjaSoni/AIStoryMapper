@@ -1,0 +1,35 @@
+[PM - Sarah]
+We’ve gotten feedback from several users that they want to receive weekly summary emails of their task progress. This should pull in completed tasks, overdue ones, and any that are due in the coming 7 days.
+
+[Engineer - Ravi]
+That would need backend support to aggregate task data for each user. Should we use an existing cron job service or set up something new?
+
+[Designer - Mia]
+We should make sure the email design fits our brand template. Do we already have a reusable email component?
+
+[TPM - Jordan]
+Also, we need to investigate how to make the task filtering more flexible. Some customers want to filter tasks not just by due date but also by custom tags and assigned team.
+
+[PM - Sarah]
+Good point. Let's look into that as a future enhancement. Maybe Q4. Not urgent now.
+
+[Engineer - Ravi]
+I’ve noticed our task activity feed loads really slowly when users have more than 500 tasks. I think we need to paginate that API response. Right now it returns everything at once.
+
+[Designer - Mia]
+We also need a loading skeleton state while the activity feed loads. Right now it just looks broken while it's fetching.
+
+[PM - Sarah]
+Can we get analytics on how many users are even looking at the activity feed? No point optimizing if no one’s using it.
+
+[TPM - Jordan]
+Let’s add a spike to track that — maybe set up an event in Mixpanel or Amplitude.
+
+[Engineer - Ravi]
+Also, for the mobile app, I’ve been getting crashes when the user tries to open a task without internet. We need to add offline handling there.
+
+[PM - Sarah]
+Is that happening on both iOS and Android?
+
+[Engineer - Ravi]
+I’ve only confirmed it on Android so far. I’ll check iOS.

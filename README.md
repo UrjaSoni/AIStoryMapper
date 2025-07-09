@@ -65,7 +65,7 @@ Powered by **GitHub Copilot Chat (GHC)**, this tool supports two usage modes:
 If you're using VS Code Insiders and have access to GitHub Copilot Custom Agents, follow these steps:
 
 1. Open the transcript or notes file
-Open the `.txt` file you'd like to extract user stories from (e.g., AIStoryMapper/transcripts/contoso_mock_meeting_transcript.txt)
+Open the `.txt` file you'd like to extract user stories from (e.g., AIStoryMapper/inputs/contoso_mock_meeting_transcript.txt)
 
 1. Open Copilot Chat
 Open the Copilot Chat pane from the sidebar (or press Cmd+I / Ctrl+I if you have the shortcut enabled).
@@ -76,9 +76,11 @@ Click the dropdown in the upper-right of the Copilot Chat window (next to the "S
 
 Select the userstories Agent from the list of available agents.
 
+1. Choose Claude Sonnet 3.5 | 3.7 | 4 premium models
+
 - Ask it:
 
-    `Please extract user stories and spikes from this transcript file.`
+    `Please extract user stories and spikes from this transcript/notes file.`
 
 1. Output
 The agent will:
@@ -98,7 +100,7 @@ If you like the changes the GitHub Copilot made, you can click on 'Keep' button 
 
 If you do not have access to Custom Agent Mode, you can use GitHub Copilot Chat directly:
 
-1. Open your transcript file (e.g., AIStoryMapper/transcripts/contoso_mock_meeting_transcript.txt)
+1. Open your transcript file (e.g., AIStoryMapper/inputs/contoso_mock_meeting_transcript.txt)
 
 2. In Copilot Chat, paste the following prompt:
 
@@ -133,8 +135,8 @@ If you do not have access to Custom Agent Mode, you can use GitHub Copilot Chat 
     ```
 
 ## Future Improvements
-Shell script or CLI for auto-parsing and saving markdown output
+- Shell script or CLI for auto-parsing and saving markdown output
 
-GitHub Action to extract stories from transcripts in PRs
+- Optional integration with Jira, Linear, or Azure DevOps
 
-Optional integration with Jira, Linear, or Azure DevOps
+- Integration with Loop or One-Note (if possible)

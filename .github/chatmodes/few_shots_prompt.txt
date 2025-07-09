@@ -107,6 +107,37 @@ Test Plan:
 
 ---
 
+Title: Increase Parent Job Observability
+
+Description:
+As a developer,  
+I want to log and view metrics at the parent job level,  
+so that I can generate accurate charts and insights for the entire experiment.
+
+Technical Details:
+- MLflow currently logs metrics only at the child job level
+- Proposal: also log metrics to the parent job using the parent run_id
+- When calling mlflow.log_metric(), also make a second call with run_id=parent_run_id
+- Use active_run().info.run_id and get_parent_run(run_id=...) to retrieve parent run
+- Enables creation of unified dashboards in AML Studio, MLflow UI, etc.
+- Example logic:
+  mlflow.log_metric("scoring_mse", mse)
+  mlflow.log_metric("scoring_mse", mse, run_id=parent_run_id)
+
+Acceptance Criteria:
+- Metrics from child runs are also logged to the parent job
+- Dashboards accurately reflect parent-level metrics
+- A markdown doc explains implementation details and rationale
+
+Tags: Backend, MLFlow, Observability
+
+Clarifying Questions / Gaps:
+- Should metrics from historical runs also be backfilled?
+
+Status: Ready
+
+---
+
 **Instructions:**  
 - Return all work items as a single Markdown-formatted document  
 - Number each work item sequentially for easy reference  
