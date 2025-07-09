@@ -27,7 +27,7 @@ Powered by **GitHub Copilot Chat (GHC)**, this tool supports two usage modes:
     - Install and enable the GitHub Copilot extension from the VS Code Marketplace.
     - GitHub Copilot Chat enabled in **VS Code**
     - For agent mode: **VS Code Insiders** with **Custom Copilot Agent (Preview)** support
-- A transcript or note file, e.g., `AIStoryMapper/transcripts/yourfile.txt`
+- A transcript or note file, e.g., `AIStoryMapper/inputs/yourfile.txt`
 
 
 ## Installation
