@@ -78,20 +78,21 @@ Open the Copilot Chat pane from the sidebar (or press Cmd+I / Ctrl+I if you have
 
 1. Choose Claude Sonnet 3.5 | 3.7 | 4 premium models
 
-- Ask it:
+    Ask it:
 
     `Please extract user stories and spikes from this transcript/notes file.`
 
 1. Output
-The agent will:
 
-- Parse the content
+    The agent will:
 
-- Generate structured user stories and spikes
+    - Parse the content
 
-- Include full metadata, tags, status (ready or refinement)
+    - Generate structured user stories and spikes
 
-- Output the results as a markdown document you can save
+    - Include full metadata, tags, status (ready or refinement)
+
+    - Output the results as a markdown document you can save
 
 1. Save
 If you like the changes the GitHub Copilot made, you can click on 'Keep' button to save the changes.
