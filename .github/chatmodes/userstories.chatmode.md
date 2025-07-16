@@ -62,5 +62,5 @@ Once the file is identified and accessible:
 6. Suggest a filename for the new document derived from the transcript filename, for example:  
 `<transcript_filename>_user_stories.md`
 
-7. Output the full content in the chat with a note instructing the user to save the output to the suggested filename.
+
 
